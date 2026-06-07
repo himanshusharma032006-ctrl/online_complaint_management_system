@@ -1,0 +1,1 @@
+import{j as e,M as n,N as o}from"./index-tJ82yWXv.js";function t({status:a}){const s=n[a]||n.pending;return e.jsxs("span",{className:`badge ${s.color}`,children:[e.jsx("span",{className:`w-1.5 h-1.5 rounded-full ${s.dot}`}),s.label]})}function c({priority:a}){const s=o[a]||o.medium;return e.jsx("span",{className:`badge ${s.color}`,children:s.label})}export{c as P,t as S};
