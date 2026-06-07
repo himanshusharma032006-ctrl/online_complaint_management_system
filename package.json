@@ -8,7 +8,7 @@
     "dev:client": "cd client && npm run dev",
     "setup": "npm install && cd server && npm install && cd ../client && npm install && cd ../server && node database/seed.js",
     "install:all": "npm install && cd server && npm install && cd ../client && npm install",
-    "build": "npm run install:all && cd client && npm run build && node ../build-post.js"
+    "build": "cd server && npm install && cd ../client && npm install && npm run build && cd .. && node build-post.js"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
