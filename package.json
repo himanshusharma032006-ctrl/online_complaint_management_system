@@ -2,13 +2,16 @@
   "name": "college-complaint-management-system",
   "version": "1.0.0",
   "description": "Online College Complaint Management System",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "dev:server": "cd server && npm run dev",
     "dev:client": "cd client && npm run dev",
     "setup": "npm install && cd server && npm install && cd ../client && npm install && cd ../server && node database/seed.js",
     "install:all": "npm install && cd server && npm install && cd ../client && npm install",
-    "build": "cd server && npm install && cd ../client && npm install && npm run build && cd .. && node build-post.js"
+    "build": "cd client && npm install && npm run build"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
